@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a30cb08c-6d7f-4f0e-a4fd-4d577f0fbe30" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-mock/src/main/java/cn/heweiming/novelty/mock/config/JdbcConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-mock/src/main/java/cn/heweiming/novelty/mock/config/MybatisConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-mock/src/main/java/cn/heweiming/novelty/mock/config/MybatisMapperScannerConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/ActivitiConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/DispatchServletConfig.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-api/pom.xml" afterPath="$PROJECT_DIR$/novelty-api/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/.factorypath" afterPath="$PROJECT_DIR$/novelty-mock/.factorypath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/.settings/org.eclipse.jdt.apt.core.prefs" afterPath="$PROJECT_DIR$/novelty-mock/.settings/org.eclipse.jdt.apt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/novelty-mock/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/pom.xml" afterPath="$PROJECT_DIR$/novelty-mock/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-rs/pom.xml" afterPath="$PROJECT_DIR$/novelty-rs/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-service/pom.xml" afterPath="$PROJECT_DIR$/novelty-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/.settings/org.eclipse.wst.common.component" afterPath="$PROJECT_DIR$/novelty-view/.settings/org.eclipse.wst.common.component" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/pom.xml" afterPath="$PROJECT_DIR$/novelty-view/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/SpringFrameworkConfig.java" afterPath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/SpringFrameworkConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/WebInitializer.java" afterPath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/WebInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/controller/DemoController.java" afterPath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/controller/DemoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-webjars/.classpath" afterPath="$PROJECT_DIR$/novelty-webjars/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-webjars/.project" afterPath="$PROJECT_DIR$/novelty-webjars/.project" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-webjars/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/novelty-webjars/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-webjars/pom.xml" afterPath="$PROJECT_DIR$/novelty-webjars/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-mock/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/novelty-mock/src/main/resources/config/application.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/WebMvcConfig.java" afterPath="$PROJECT_DIR$/novelty-view/src/main/java/cn/heweiming/novelty/config/SpringMvcConfig.java" />
-    </list>
+    <list default="true" id="a30cb08c-6d7f-4f0e-a4fd-4d577f0fbe30" name="Default" comment="" />
     <ignored path="novelty.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,8 +41,8 @@
       <file leaf-file-name="person.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/novelty-view/src/main/webapp/resources/temp/demo/datatables/2016-12-03/person.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="47" />
+            <state relative-caret-position="162">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
               <folding>
                 <marker date="1482932003339" expanded="true" signature="6660:6666" ph="&amp;nbsp;" />
                 <marker date="1482932003339" expanded="true" signature="6666:6672" ph="&amp;nbsp;" />
@@ -372,19 +347,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="temp" />
+              <option name="myItemId" value="plug-ins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
+              <option name="myItemId" value="DataTables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="datatables" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2016-12-03" />
+              <option name="myItemId" value="1.10.13" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,78 +386,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1001,16 +900,16 @@
       <workItem from="1482830723184" duration="2563000" />
       <workItem from="1482850146917" duration="279000" />
       <workItem from="1482893194047" duration="1740000" />
-      <workItem from="1482928630496" duration="2682000" />
+      <workItem from="1482928630496" duration="2890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13951000" />
+    <option name="totallyTimeSpent" value="14159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1025,7 +924,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28895614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28895614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1444,8 +1343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/webapp/resources/temp/demo/datatables/2016-12-03/person.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="47" />
+        <state relative-caret-position="162">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
             <marker date="1482932003339" expanded="true" signature="6660:6666" ph="&amp;nbsp;" />
             <marker date="1482932003339" expanded="true" signature="6666:6672" ph="&amp;nbsp;" />
