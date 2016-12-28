@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="novelty-api" />
+        <module name="novelty-mock" />
+        <module name="novelty-rs" />
+        <module name="novelty-service" />
+        <module name="novelty-view" />
+        <module name="novelty-webjars" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="novelty" target="1.8" />
+      <module name="novelty-api" target="1.8" />
+      <module name="novelty-mock" target="1.8" />
+      <module name="novelty-rs" target="1.8" />
+      <module name="novelty-service" target="1.8" />
+      <module name="novelty-view" target="1.8" />
+      <module name="novelty-webjars" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/novelty.iml" filepath="$PROJECT_DIR$/novelty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-api/novelty-api.iml" filepath="$PROJECT_DIR$/novelty-api/novelty-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-mock/novelty-mock.iml" filepath="$PROJECT_DIR$/novelty-mock/novelty-mock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-rs/novelty-rs.iml" filepath="$PROJECT_DIR$/novelty-rs/novelty-rs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-service/novelty-service.iml" filepath="$PROJECT_DIR$/novelty-service/novelty-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-view/novelty-view.iml" filepath="$PROJECT_DIR$/novelty-view/novelty-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/novelty-webjars/novelty-webjars.iml" filepath="$PROJECT_DIR$/novelty-webjars/novelty-webjars.iml" />
+    </modules>
+  </component>
+</project>

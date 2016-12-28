@@ -3,10 +3,13 @@ package cn.heweiming.novelty.config;
 import javax.servlet.FilterRegistration.Dynamic;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
+import org.springframework.web.servlet.DispatcherServlet;
 
 public class WebInitializer implements WebApplicationInitializer {
 
@@ -42,6 +45,15 @@ public class WebInitializer implements WebApplicationInitializer {
 		// javax.servlet.ServletRegistration.Dynamic rainServlet =
 		// servletContext.addServlet("rainServlet", RainServlet.class);
 		// rainServlet.addMapping("/rain");
+		
+		AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
+		ctx.register(SpringMvcConfig.class);
+		ctx.setServletContext(servletContext);
+		
+		ServletRegistration.Dynamic dispatcherServlet = servletContext.addServlet("dispatcherServlet", new DispatcherServlet(ctx));
+
+		dispatcherServlet.setLoadOnStartup(1);
+		dispatcherServlet.addMapping("/");
 
 	}
 

@@ -11,11 +11,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.scheduling.annotation.AsyncConfigurer;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -24,13 +26,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan(basePackages = { "cn.heweiming.novelty" }, excludeFilters = {
 		@Filter(type = FilterType.ANNOTATION, value = org.springframework.stereotype.Controller.class),
 		@Filter(type = FilterType.ANNOTATION, value = org.springframework.web.bind.annotation.RestController.class),
-		@Filter(type = FilterType.ANNOTATION, value = org.springframework.web.bind.annotation.ControllerAdvice.class)
- })
+		@Filter(type = FilterType.ANNOTATION, value = org.springframework.web.bind.annotation.ControllerAdvice.class) })
 // @EnableAutoConfiguration
- @EnableTransactionManagement // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
-// @EnableAspectJAutoProxy
+@EnableTransactionManagement // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
+@EnableAspectJAutoProxy
 @EnableAsync
-// @EnableScheduling
+@EnableScheduling
 public class SpringFrameworkConfig implements AsyncConfigurer {
 
 	@Autowired
@@ -60,9 +61,7 @@ public class SpringFrameworkConfig implements AsyncConfigurer {
 		// dataSource.setPassword("");
 		// dataSource.setInitialSize(10);
 		// dataSource.setMaxIdle(5);
-		
-		
-		
+
 		DataSource build = DataSourceBuilder.create()//
 				.driverClassName(env.getProperty("jdbc.driver"))//
 				.url(env.getProperty("jdbc.url"))//

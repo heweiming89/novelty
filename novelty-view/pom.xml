@@ -2,11 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>novelty-view</artifactId>
+
   <parent>
     <groupId>cn.heweiming.project</groupId>
     <artifactId>novelty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+
   <packaging>war</packaging>
 
   <build>
@@ -19,6 +21,34 @@
   </build>
 
   <dependencies>
+
+    <dependency>
+      <groupId>cn.heweiming.project</groupId>
+      <artifactId>novelty-webjars</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Servlet Jsp JSTL -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>javax.el</groupId> -->
+    <!-- <artifactId>javax.el-api</artifactId> -->
+    <!-- <scope>provided</scope> -->
+    <!-- </dependency> -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+    </dependency>
+
     <!-- MySQL JDBC -->
     <dependency>
       <groupId>mysql</groupId>
@@ -41,6 +71,40 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-xml</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>org.apache.tomcat</groupId> -->
+    <!-- <artifactId>tomcat-servlet-api</artifactId> -->
+    <!-- <version>8.5.6</version> -->
+    <!-- </dependency> -->
+    <!-- <dependency> -->
+    <!-- <groupId>org.apache.tomcat.embed</groupId> -->
+    <!-- <artifactId>tomcat-embed-el</artifactId> -->
+    <!-- </dependency> -->
+
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
       <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -57,11 +121,11 @@
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
 
-    <dependency>
-      <groupId>org.activiti</groupId>
-      <artifactId>activiti-spring-boot-starter-basic</artifactId>
-      <version>5.22.0</version>
-    </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>org.activiti</groupId> -->
+    <!-- <artifactId>activiti-spring-boot-starter-basic</artifactId> -->
+    <!-- <version>5.22.0</version> -->
+    <!-- </dependency> -->
 
 
   </dependencies>

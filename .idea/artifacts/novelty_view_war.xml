@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="novelty-view:war">
+    <output-path>$PROJECT_DIR$/novelty-view/target</output-path>
+    <root id="archive" name="novelty-view-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="novelty-view:war exploded" />
+    </root>
+  </artifact>
+</component>
