@@ -1,6 +1,7 @@
 package cn.heweiming.novelty.config;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,19 +18,26 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
+import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
+import org.springframework.web.util.UrlPathHelper;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import cn.heweiming.novelty.conversion.EnumConverter;
 import cn.heweiming.novelty.conversion.PersonConverter;
+import cn.heweiming.novelty.interceptor.TimeBasedAccessInterceptor;
 
 @Configuration
 @EnableWebMvc // 启用 Spring MVC
@@ -39,22 +47,56 @@ import cn.heweiming.novelty.conversion.PersonConverter;
 		@Filter(type = FilterType.ANNOTATION, value = org.springframework.web.bind.annotation.ControllerAdvice.class) })
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
+	
 	@Bean
-	public ViewResolver viewResolver() {
+	public ViewResolver viewResolver() { // UrlBasedViewResolver
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		String prefix = "/WEB-INF/classes/views/";
 		prefix = "/WEB-INF/views/";
+		String suffix = ".jsp";
 		viewResolver.setViewClass(JstlView.class);
 		viewResolver.setPrefix(prefix);
-		viewResolver.setSuffix(".jsp");
+		viewResolver.setSuffix(suffix); 
 		viewResolver.setExposeContextBeansAsAttributes(Boolean.TRUE);
+
+		// ContentNegotiatingViewResolver
+
 		return viewResolver;
 	}
+	
 
-	@Override
-	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-		configurer.enable(); // 配置静态资源的处理
+	
+	/*
+	@Bean
+	public ViewResolver viewResolver() {
+		ContentNegotiatingViewResolver cnvr = new ContentNegotiatingViewResolver();
+		
+		List<View> defaultViews = new ArrayList<>();
+		MappingJackson2JsonView jsonView = new MappingJackson2JsonView();
+		defaultViews.add(jsonView);
+		
+		cnvr.setDefaultViews(defaultViews);
+		
+		List<ViewResolver> viewResolvers = new ArrayList<>();
+		
+		InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
+		String prefix = "/WEB-INF/classes/views/";
+		prefix = "/WEB-INF/views/";
+		String suffix = ".jsp";
+		internalResourceViewResolver.setViewClass(JstlView.class);
+		internalResourceViewResolver.setPrefix(prefix);
+		internalResourceViewResolver.setSuffix(suffix); 
+		internalResourceViewResolver.setExposeContextBeansAsAttributes(Boolean.TRUE);
+		
+		
+		
+		viewResolvers.add(internalResourceViewResolver);
+		
+		cnvr.setViewResolvers(viewResolvers);
+
+		return cnvr;
 	}
+	*/
 
 	@Bean /* 文件上传配置 */
 	public MultipartResolver multipartResolver() {
@@ -63,14 +105,14 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 	}
 
 	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		// super.addInterceptors(registry);
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		configurer.enable(); // 配置静态资源的处理
 	}
 
-	// @Override
-	// public void addResourceHandlers(ResourceHandlerRegistry registry) {
-	// registry.addResourceHandler("/static/**").addResourceLocations("/resources/");
-	// }
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(new TimeBasedAccessInterceptor());
+	}
 
 	@Override
 	public void addFormatters(FormatterRegistry registry) {
@@ -83,7 +125,9 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 
 		ObjectMapper mapper = new ObjectMapper();
-		mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+		mapper.setDateFormat(dateFormat);
 		mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
 		MappingJackson2HttpMessageConverter jsonHmc = new MappingJackson2HttpMessageConverter();
@@ -91,10 +135,21 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		jsonHmc.setObjectMapper(mapper);
 		converters.add(jsonHmc);
 
+		XmlMapper xmlMapper = new XmlMapper();
+		xmlMapper.setDateFormat(dateFormat);
+		xmlMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+
 		MappingJackson2XmlHttpMessageConverter xmlHmc = new MappingJackson2XmlHttpMessageConverter();
 		xmlHmc.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_ATOM_XML, MediaType.TEXT_XML));
-//		xmlHmc.setObjectMapper(mapper);
+		// xmlHmc.setObjectMapper(mapper);
 		converters.add(xmlHmc);
+	}
+
+	@Override
+	public void configurePathMatch(PathMatchConfigurer configurer) {
+		UrlPathHelper urlPathHelper = new UrlPathHelper();
+		urlPathHelper.setRemoveSemicolonContent(false);
+		configurer.setUrlPathHelper(urlPathHelper);
 	}
 
 }

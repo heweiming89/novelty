@@ -1,15 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="context_root" value="${pageContext.request.contextPath }" />
+<c:set var="plugins_root" value="${context_root}/resources/plugins" />
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <title>Person</title>
 	<link rel="stylesheet" href="${context_root}/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${context_root}/webjars/datatables/1.10.13/media/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="${context_root}/webjars/datatables-buttons/1.2.2/css/buttons.bootstrap.scss">
-    <link rel="stylesheet" href="${context_root}/webjars/datatables-responsive/2.1.0/css/responsive.bootstrap.scss">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/media/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Responsive/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Scroller/css/scroller.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/css/buttons.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Select/css/select.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/FixedHeader/css/fixedHeader.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/1.10.13/extensions/FixedColumns/css/fixedColumns.bootstrap.min.css">
+    <link rel="stylesheet" href="${context_root}/resources/plugins/DataTables/Editor/1.6.1/css/editor.bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
@@ -30,8 +36,24 @@
 </body>
 <script src="${context_root}/webjars/jquery/2.2.4/jquery.min.js"></script>
 <script src="${context_root}/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
-<script src="${context_root}/webjars/datatables/1.10.13/media/js/jquery.dataTables.min.js"></script>
-<script src="${context_root}/webjars/datatables/1.10.13/media/js/dataTables.bootstrap.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/media/js/jquery.dataTables.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/media/js/dataTables.bootstrap.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Scroller/js/dataTables.scroller.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Responsive/js/responsive.bootstrap.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Select/js/dataTables.select.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/FixedHeader/js/dataTables.fixedHeader.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/FixedColumns/js/dataTables.fixedColumns.min.js"></script>
+
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/js/dataTables.buttons.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/js/buttons.bootstrap.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/js/buttons.html5.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/js/buttons.print.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/1.10.13/extensions/Buttons/js/buttons.colVis.min.js"></script>
+
+<script src="${context_root}/resources/plugins/DataTables/Editor/1.6.1/js/dataTables.editor.min.js"></script>
+<script src="${context_root}/resources/plugins/DataTables/Editor/1.6.1/js/editor.bootstrap.min.js"></script>
+
 <script>
 	var editor = null;
 	var dataTableId = "#example";
@@ -297,13 +319,13 @@
 										editor : editor
 									} ],
 							language : {
-								url : "${ctx_path}/includes/i18n/datatables_zh-cn.json"
+								url : "${context_root}/resources/config/i18n/datatables_zh-cn.json"
 							},
 
 							ordering : false,
 							serverSide : true,
 							ajax : {
-								url : "${ctx_path}/person/paging",
+								url : "${context_root}/person/paging",
 								type : "GET"
 							},
 

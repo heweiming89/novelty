@@ -45,11 +45,6 @@
       <version>1.7.0</version>
     </dependency>
     <dependency>
-      <groupId>org.webjars.bower</groupId>
-      <artifactId>datatables</artifactId>
-      <version>1.10.13</version>
-    </dependency>
-    <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>excanvas</artifactId>
       <version>3</version>
@@ -418,21 +413,6 @@
     </dependency>
 
     <dependency>
-      <groupId>org.webjars.bower</groupId>
-      <artifactId>datatables-buttons</artifactId>
-      <version>1.2.2</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars.bower</groupId>
-      <artifactId>datatables-fixedcolumns</artifactId>
-      <version>3.0.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars.bower</groupId>
-      <artifactId>datatables-responsive</artifactId>
-      <version>2.1.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>sockjs-client</artifactId>
       <version>1.1.1</version>
@@ -445,22 +425,23 @@
     </dependency>
 
     <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>datatables-fixedheader</artifactId>
-      <version>2.1.2-1</version>
-    </dependency>
-
-    <dependency>
       <groupId>org.webjars.npm</groupId>
       <artifactId>timeago.js</artifactId>
       <version>1.1.0</version>
     </dependency>
 
     <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>datatables-plugins</artifactId>
-      <version>1.10.12</version>
+      <groupId>org.webjars.npm</groupId>
+      <artifactId>flatpickr</artifactId>
+      <version>2.2.4</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>slidebars</artifactId>
+      <version>2.0.2</version>
+    </dependency>
+
   </dependencies>
 
 

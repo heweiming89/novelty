@@ -61,7 +61,7 @@
 	$("#ipt07").inputmask("decimal",{
 		groupSeparator : ",",
 		autoGroup : true,
-		"repeat": 5,
+		"repeat": 10,
 	});
 
 </script>

@@ -117,7 +117,7 @@
                   <!-- BEGIN TODO DROPDOWN -->
                   <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar"><a href="javascript:;"
                     class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i
-                      class="icon-calendar"></i> <span class="badge badge-default">3</span>
+                      class="fa fa-calendar"></i> <span class="badge badge-default">3</span>
                   </a>
                     <ul class="dropdown-menu extended tasks">
                       <li class="external">

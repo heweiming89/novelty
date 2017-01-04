@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.controller;
+package cn.heweiming.novelty.controller.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,13 +9,14 @@ import cn.heweiming.novelty.bean.Person;
 
 @RestController
 public class DemoController {
-	
+
 	@Autowired
 	private Person person;
-	
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String get() {
-		return person.getName();
+	public Person get() {
+		person.setName("3421432");
+		return person;
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.POST)

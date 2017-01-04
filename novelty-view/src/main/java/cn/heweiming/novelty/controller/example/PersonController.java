@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.controller;
+package cn.heweiming.novelty.controller.example;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -12,7 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Validator;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,6 +25,7 @@ import cn.heweiming.novelty.bean.Person;
 import cn.heweiming.novelty.domain.vo.AjaxRespObj;
 import cn.heweiming.novelty.domain.vo.DataTablesRequest;
 import cn.heweiming.novelty.domain.vo.DataTablesResponse;
+import cn.heweiming.novelty.editor.StringEditor;
 import cn.heweiming.novelty.service.PersonService;
 import cn.heweiming.novelty.util.BeanUtils;
 import cn.heweiming.novelty.util.DataTablesUtils;
@@ -34,6 +37,14 @@ public class PersonController {
 	@Autowired
 	private Validator validator;
 	
+	@GetMapping(value = "/demo")
+	@ResponseBody
+	public Person get2(Person person) {
+		System.out.println(validator);
+		person.setWeight(1_234_567.99);
+		return person;
+	}
+
 	@GetMapping(value = "/url/{person}")
 	@ResponseBody
 	public Person get(@PathVariable("person") Person person) {
@@ -41,7 +52,7 @@ public class PersonController {
 		person.setWeight(1_234_567.99);
 		return person;
 	}
-	
+
 	@Autowired
 	private PersonService personService;
 
@@ -98,6 +109,11 @@ public class PersonController {
 			System.out.println(key + "\t" + Arrays.toString(map.get(key)));
 		}
 		return null;
+	}
+
+	@InitBinder
+	protected void initBinder(WebDataBinder binder) {
+		binder.registerCustomEditor(String.class, new StringEditor());
 	}
 
 }
