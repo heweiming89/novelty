@@ -1,7 +1,6 @@
 package cn.heweiming.novelty.config;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,17 +17,15 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
-import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 import org.springframework.web.util.UrlPathHelper;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -47,7 +44,6 @@ import cn.heweiming.novelty.interceptor.TimeBasedAccessInterceptor;
 		@Filter(type = FilterType.ANNOTATION, value = org.springframework.web.bind.annotation.ControllerAdvice.class) })
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
-	
 	@Bean
 	public ViewResolver viewResolver() { // UrlBasedViewResolver
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -56,47 +52,13 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		String suffix = ".jsp";
 		viewResolver.setViewClass(JstlView.class);
 		viewResolver.setPrefix(prefix);
-		viewResolver.setSuffix(suffix); 
+		viewResolver.setSuffix(suffix);
 		viewResolver.setExposeContextBeansAsAttributes(Boolean.TRUE);
 
 		// ContentNegotiatingViewResolver
 
 		return viewResolver;
 	}
-	
-
-	
-	/*
-	@Bean
-	public ViewResolver viewResolver() {
-		ContentNegotiatingViewResolver cnvr = new ContentNegotiatingViewResolver();
-		
-		List<View> defaultViews = new ArrayList<>();
-		MappingJackson2JsonView jsonView = new MappingJackson2JsonView();
-		defaultViews.add(jsonView);
-		
-		cnvr.setDefaultViews(defaultViews);
-		
-		List<ViewResolver> viewResolvers = new ArrayList<>();
-		
-		InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
-		String prefix = "/WEB-INF/classes/views/";
-		prefix = "/WEB-INF/views/";
-		String suffix = ".jsp";
-		internalResourceViewResolver.setViewClass(JstlView.class);
-		internalResourceViewResolver.setPrefix(prefix);
-		internalResourceViewResolver.setSuffix(suffix); 
-		internalResourceViewResolver.setExposeContextBeansAsAttributes(Boolean.TRUE);
-		
-		
-		
-		viewResolvers.add(internalResourceViewResolver);
-		
-		cnvr.setViewResolvers(viewResolvers);
-
-		return cnvr;
-	}
-	*/
 
 	@Bean /* 文件上传配置 */
 	public MultipartResolver multipartResolver() {
@@ -124,14 +86,15 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 
-		ObjectMapper mapper = new ObjectMapper();
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
+		
+		ObjectMapper mapper = new ObjectMapper();
 		mapper.setDateFormat(dateFormat);
 		mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
 		MappingJackson2HttpMessageConverter jsonHmc = new MappingJackson2HttpMessageConverter();
-		jsonHmc.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_JSON_UTF8, MediaType.TEXT_HTML));
+		jsonHmc.setSupportedMediaTypes(
+				Arrays.asList(MediaType.APPLICATION_JSON, MediaType.APPLICATION_JSON_UTF8, MediaType.TEXT_HTML));
 		jsonHmc.setObjectMapper(mapper);
 		converters.add(jsonHmc);
 
@@ -140,8 +103,9 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		xmlMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
 		MappingJackson2XmlHttpMessageConverter xmlHmc = new MappingJackson2XmlHttpMessageConverter();
-		xmlHmc.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_ATOM_XML, MediaType.TEXT_XML));
-		// xmlHmc.setObjectMapper(mapper);
+		xmlHmc.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_XML, MediaType.APPLICATION_ATOM_XML,
+				MediaType.APPLICATION_XHTML_XML, MediaType.TEXT_XML));
+		xmlHmc.setObjectMapper(xmlMapper);
 		converters.add(xmlHmc);
 	}
 
@@ -150,6 +114,12 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		UrlPathHelper urlPathHelper = new UrlPathHelper();
 		urlPathHelper.setRemoveSemicolonContent(false);
 		configurer.setUrlPathHelper(urlPathHelper);
+	}
+
+	@Override
+	public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
+		configurer.mediaType("json", MediaType.APPLICATION_JSON);
+		configurer.mediaType("xml", MediaType.APPLICATION_XML);
 	}
 
 }
