@@ -24,6 +24,7 @@ public class ExpressionMock {
 	}
 
 	@Test
+	@SuppressWarnings("unused")
 	public void test02() {
 		ExpressionParser parser = new SpelExpressionParser();
 		// evals to "Hello World"

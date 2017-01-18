@@ -10,10 +10,10 @@ import org.apache.commons.beanutils.BeanUtilsBean;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.Converter;
 
-import cn.heweiming.novelty.converter.DateConverter;
-import cn.heweiming.novelty.converter.EnumConverter;
 import cn.heweiming.novelty.domain.vo.BaseEnum;
 import cn.heweiming.novelty.domain.vo.Gender;
+import cn.heweiming.novelty.util.converter.DateConverter;
+import cn.heweiming.novelty.util.converter.EnumConverter;
 
 public class BeanUtils extends org.apache.commons.beanutils.BeanUtils {
 

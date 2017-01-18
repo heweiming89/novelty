@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.converter;
+package cn.heweiming.novelty.util.converter;
 
 import static cn.heweiming.novelty.common.Constant.DATE_FORMAT_FULL;
 import static cn.heweiming.novelty.common.Constant.DATE_FORMAT_LONG;

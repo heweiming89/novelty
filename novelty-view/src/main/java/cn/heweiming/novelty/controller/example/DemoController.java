@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import cn.heweiming.novelty.bean.Person;
 
 @RestController
+@RequestMapping(value = "/demo")
 public class DemoController {
 
 	@Autowired

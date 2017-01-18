@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.converter;
+package cn.heweiming.novelty.util.converter;
 
 import org.apache.commons.beanutils.Converter;
 

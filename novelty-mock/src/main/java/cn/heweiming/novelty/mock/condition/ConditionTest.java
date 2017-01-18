@@ -11,6 +11,7 @@ import org.springframework.util.MultiValueMap;
 public class ConditionTest implements Condition {
 
 	@Override
+	@SuppressWarnings("unused")
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
 		Map<String, String> map = System.getenv();
 		MultiValueMap<String, Object> attrs = metadata.getAllAnnotationAttributes(Profile.class.getName());

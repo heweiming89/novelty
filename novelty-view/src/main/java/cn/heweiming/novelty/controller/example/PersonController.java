@@ -3,6 +3,7 @@ package cn.heweiming.novelty.controller.example;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -36,12 +37,14 @@ public class PersonController {
 
 	@Autowired
 	private Validator validator;
-	
+
 	@GetMapping(value = "/demo")
 	@ResponseBody
 	public Person get2(Person person) {
 		System.out.println(validator);
 		person.setWeight(1_234_567.99);
+		person.setBirthday(new Date());
+		person.setName("曾阿牛");
 		return person;
 	}
 

@@ -32,8 +32,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-import cn.heweiming.novelty.conversion.EnumConverter;
-import cn.heweiming.novelty.conversion.PersonConverter;
+import cn.heweiming.novelty.controller.converter.EnumConverter;
+import cn.heweiming.novelty.controller.converter.PersonConverter;
+import cn.heweiming.novelty.filter.RequestHandlerFilter;
 import cn.heweiming.novelty.interceptor.TimeBasedAccessInterceptor;
 
 @Configuration
@@ -68,7 +69,8 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-		configurer.enable(); // 配置静态资源的处理
+//		configurer.enable(); // 配置静态资源的处理
+		configurer.enable("noveltyDefaultServlet");
 	}
 
 	@Override
@@ -86,8 +88,17 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 
+		// Jackson2ObjectMapperBuilder builder = new
+		// Jackson2ObjectMapperBuilder()//
+		// .indentOutput(true)//
+		// .dateFormat(new SimpleDateFormat("yyyy-MM-dd"));
+		// converters.add(new
+		// MappingJackson2HttpMessageConverter(builder.build()));
+		// converters.add(new
+		// MappingJackson2XmlHttpMessageConverter(builder.xml().build()));
+
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		
+
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.setDateFormat(dateFormat);
 		mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
@@ -121,5 +132,10 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		configurer.mediaType("json", MediaType.APPLICATION_JSON);
 		configurer.mediaType("xml", MediaType.APPLICATION_XML);
 	}
+	
+//	@Bean
+//	public RequestHandlerFilter requestHandlerFilter(){
+//		return new RequestHandlerFilter();
+//	}
 
 }

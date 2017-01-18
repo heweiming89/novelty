@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.conversion;
+package cn.heweiming.novelty.controller.converter;
 
 import org.springframework.core.convert.converter.Converter;
 

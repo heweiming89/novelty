@@ -12,7 +12,17 @@ public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter {
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		System.out.println("TimeBasedAccessInterceptor.preHandle()");
-		return super.preHandle(request, response, handler);
+		String header = request.getHeader("X-Requested-With");
+		String uri = request.getRequestURI();
+		String version = request.getParameter("version");
+		System.out.println(uri);
+		String str = "?version=1.5.3";
+		System.out.println(version);
+		if (header == null && version == null) {
+			response.sendRedirect(uri + str);
+		}
+		// return super.preHandle(request, response, handler);
+		return true;
 	}
 
 	@Override
@@ -29,8 +39,4 @@ public class TimeBasedAccessInterceptor extends HandlerInterceptorAdapter {
 		super.afterCompletion(request, response, handler, ex);
 	}
 
-	
-	
-	
-	
 }
