@@ -2,7 +2,7 @@ package cn.heweiming.novelty.domain.vo;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-import cn.heweiming.novelty.serializer.EnumerationSerializer;
+import cn.heweiming.novelty.json.serializer.EnumerationSerializer;
 
 /**
  * @author heweiming 2016年9月12日 上午11:37:39

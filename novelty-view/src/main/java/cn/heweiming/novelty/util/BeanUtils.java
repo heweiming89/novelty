@@ -2,6 +2,7 @@ package cn.heweiming.novelty.util;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +13,7 @@ import org.apache.commons.beanutils.Converter;
 
 import cn.heweiming.novelty.domain.vo.BaseEnum;
 import cn.heweiming.novelty.domain.vo.Gender;
+import cn.heweiming.novelty.util.converter.NoveltyBigDecimalConverter;
 import cn.heweiming.novelty.util.converter.DateConverter;
 import cn.heweiming.novelty.util.converter.EnumConverter;
 
@@ -26,18 +28,19 @@ public class BeanUtils extends org.apache.commons.beanutils.BeanUtils {
 	static {
 		ConvertUtils.register(new DateConverter(), Date.class);
 		ConvertUtils.register(new EnumConverter(), Gender.class);
+		ConvertUtils.register(new NoveltyBigDecimalConverter(BigDecimal.ONE), BigDecimal.class);
 	}
 
+	@SuppressWarnings("rawtypes")
 	private static class ConvertUtilsBean extends org.apache.commons.beanutils.ConvertUtilsBean {
 
-		@SuppressWarnings("rawtypes")
 		@Override
 		public String convert(Object value) {
 			if (value == null) {
 				return null;
 			} else if (value.getClass().isArray()) {
 				if (Array.getLength(value) < 1) {
-					return (null);
+					return null;
 				}
 				value = Array.get(value, 0);
 				if (value == null) {

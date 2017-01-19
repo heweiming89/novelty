@@ -1,7 +1,5 @@
 package cn.heweiming.novelty.mock.json;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-
 public class JsonTestBean {
 
 //	@JsonDeserialize(using = MyJsonDeserializer.class)

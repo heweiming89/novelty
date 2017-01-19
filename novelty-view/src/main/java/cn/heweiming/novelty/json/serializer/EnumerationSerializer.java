@@ -1,4 +1,4 @@
-package cn.heweiming.novelty.serializer;
+package cn.heweiming.novelty.json.serializer;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

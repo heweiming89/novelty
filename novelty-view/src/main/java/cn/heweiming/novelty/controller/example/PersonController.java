@@ -26,7 +26,6 @@ import cn.heweiming.novelty.bean.Person;
 import cn.heweiming.novelty.domain.vo.AjaxRespObj;
 import cn.heweiming.novelty.domain.vo.DataTablesRequest;
 import cn.heweiming.novelty.domain.vo.DataTablesResponse;
-import cn.heweiming.novelty.editor.StringEditor;
 import cn.heweiming.novelty.service.PersonService;
 import cn.heweiming.novelty.util.BeanUtils;
 import cn.heweiming.novelty.util.DataTablesUtils;
@@ -114,9 +113,5 @@ public class PersonController {
 		return null;
 	}
 
-	@InitBinder
-	protected void initBinder(WebDataBinder binder) {
-		binder.registerCustomEditor(String.class, new StringEditor());
-	}
 
 }
