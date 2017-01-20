@@ -24,12 +24,12 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
 
 	@Bean(name = "sqlSessionFactory")
 	public SqlSessionFactory sqlSessionFactoryBean() throws Exception {
-		SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
-		factoryBean.setDataSource(dataSource);
+		SqlSessionFactoryBean factory = new SqlSessionFactoryBean();
+		factory.setDataSource(dataSource);
 		ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-		factoryBean.setMapperLocations(resolver.getResources("classpath*:sqlMapper/*.xml"));
-		factoryBean.setConfigLocation(resolver.getResource("classpath:mybatis-config.xml"));
-		return factoryBean.getObject();
+		factory.setMapperLocations(resolver.getResources("classpath*:sqlMapper/*.xml"));
+		factory.setConfigLocation(resolver.getResource("classpath:mybatis-config.xml"));
+		return factory.getObject();
 	}
 
 	@Bean

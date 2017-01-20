@@ -83,10 +83,7 @@ public class PersonController {
 	@ResponseBody
 	public AjaxRespObj create(Person person, Map<String, Object> map)
 			throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		System.out.println("PersonController.create()");
 		Map<String, String> resultMap = BeanUtils.describe(person);
-		System.out.println(resultMap);
-		System.out.println(map);
 		return null;
 	}
 
@@ -94,10 +91,7 @@ public class PersonController {
 	@ResponseBody
 	public AjaxRespObj edit(Person person, Map<String, Object> map)
 			throws IllegalAccessException, InvocationTargetException, NoSuchMethodException {
-		System.out.println("PersonController.edit()");
 		Map<String, String> resultMap = BeanUtils.describe(person);
-		System.out.println(resultMap);
-		System.out.println(map);
 		return null;
 	}
 

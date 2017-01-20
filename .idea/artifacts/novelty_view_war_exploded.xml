@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="novelty-view:war exploded">
-    <output-path>$PROJECT_DIR$/novelty-view/target/novelty-view-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/novelty-view/target/novelty</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -13,15 +13,14 @@
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.2.4" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap:3.3.7-1" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap-daterangepicker:2.1.24" />
-          <element id="library" level="project" name="Maven: org.webjars:momentjs:2.16.0" />
+          <element id="library" level="project" name="Maven: org.webjars:momentjs:2.17.1" />
           <element id="library" level="project" name="Maven: org.webjars:Eonasdan-bootstrap-datetimepicker:4.17.43" />
           <element id="library" level="project" name="Maven: org.webjars:bootstrap-switch:3.3.2" />
           <element id="library" level="project" name="Maven: org.webjars.bower:countUp.js:1.7.0" />
-          <element id="library" level="project" name="Maven: org.webjars.bower:datatables:1.10.13" />
-          <element id="library" level="project" name="Maven: org.webjars.bower:jquery:2.1.4" />
           <element id="library" level="project" name="Maven: org.webjars:excanvas:3" />
           <element id="library" level="project" name="Maven: org.webjars:font-awesome:4.7.0" />
           <element id="library" level="project" name="Maven: org.webjars.bower:fullcalendar:3.1.0" />
+          <element id="library" level="project" name="Maven: org.webjars.bower:jquery:2.1.4" />
           <element id="library" level="project" name="Maven: org.webjars.bower:moment:2.17.1" />
           <element id="library" level="project" name="Maven: org.webjars.bower:html5-boilerplate:5.2.0" />
           <element id="library" level="project" name="Maven: org.webjars:html5shiv:3.7.3" />
@@ -92,15 +91,11 @@
           <element id="library" level="project" name="Maven: org.webjars:pace:1.0.2" />
           <element id="library" level="project" name="Maven: org.webjars.bower:bootstrap-tabdrop:1.0.0" />
           <element id="library" level="project" name="Maven: org.webjars:jquery-blockui:2.65" />
-          <element id="library" level="project" name="Maven: org.webjars.bower:datatables-buttons:1.2.2" />
-          <element id="library" level="project" name="Maven: org.webjars.bower:datatables-fixedcolumns:3.0.4" />
-          <element id="library" level="project" name="Maven: org.webjars.bower:datatables-responsive:2.1.0" />
           <element id="library" level="project" name="Maven: org.webjars:sockjs-client:1.1.1" />
           <element id="library" level="project" name="Maven: org.webjars.bower:timeago:1.5.3" />
-          <element id="library" level="project" name="Maven: org.webjars:datatables-fixedheader:2.1.2-1" />
-          <element id="library" level="project" name="Maven: org.webjars:datatables:1.10.1" />
           <element id="library" level="project" name="Maven: org.webjars.npm:timeago.js:1.1.0" />
-          <element id="library" level="project" name="Maven: org.webjars:datatables-plugins:1.10.12" />
+          <element id="library" level="project" name="Maven: org.webjars.npm:flatpickr:2.2.4" />
+          <element id="library" level="project" name="Maven: org.webjars:slidebars:2.0.2" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:17.0" />
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.9.3" />
@@ -138,11 +133,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:1.4.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.10" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.8.5" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.5" />
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.woodstox:woodstox-core:5.0.3" />
-          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.10" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.8.5" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.4.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.6" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:8.5.6" />
@@ -155,12 +152,17 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-devtools:1.4.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:1.4.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:1.4.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-spring:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-web:1.3.2" />
+          <element id="library" level="project" name="Maven: org.apache.shiro:shiro-ehcache:1.3.2" />
+          <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache-core:2.5.3" />
           <element id="library" level="project" name="Maven: javax.money:money-api:1.0.1" />
           <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/novelty-view/target/novelty-view-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/novelty-view/target/novelty/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="novelty-view/web/Web" />
     </root>

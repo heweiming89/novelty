@@ -99,9 +99,9 @@ var Login = function() {
 
             // init background slide images
             $('.login-bg').backstretch(
-                    [ context_root + "/resources/global/framework/metronic/v4.7/theme/assets/pages/img/login/bg1.jpg",
-                            context_root + "/resources/global/framework/metronic/v4.7/theme/assets/pages/img/login/bg2.jpg",
-                            context_root + "/resources/global/framework/metronic/v4.7/theme/assets/pages/img/login/bg3.jpg" ], {
+                    [ context_root + "/resources/framework/metronic/v4.7/theme/assets/pages/img/login/bg1.jpg",
+                            context_root + "/resources/framework/metronic/v4.7/theme/assets/pages/img/login/bg2.jpg",
+                            context_root + "/resources/framework/metronic/v4.7/theme/assets/pages/img/login/bg3.jpg" ], {
                         fade : 1000,
                         duration : 8000
                     });

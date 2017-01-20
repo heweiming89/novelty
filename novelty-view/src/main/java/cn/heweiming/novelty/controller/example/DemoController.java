@@ -72,7 +72,6 @@ public class DemoController {
 			e.printStackTrace();
 		}
 		Object respData = testBean;
-		System.out.println(testBean);
 
 		resp.setRespData(respData);
 		return resp;

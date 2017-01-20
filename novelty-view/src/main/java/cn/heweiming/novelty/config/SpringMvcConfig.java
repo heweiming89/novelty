@@ -34,8 +34,6 @@ import org.springframework.web.util.UrlPathHelper;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 
 import cn.heweiming.novelty.controller.converter.EnumConverter;
@@ -52,7 +50,7 @@ import cn.heweiming.novelty.json.deserializer.BigDecimalDeserializer;
 public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 
 	@Bean
-	public ViewResolver viewResolver() { // UrlBasedViewResolver
+	public ViewResolver viewResolver() {
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
 		String prefix = "/WEB-INF/classes/views/";
 		prefix = "/WEB-INF/views/";
@@ -61,8 +59,6 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		viewResolver.setPrefix(prefix);
 		viewResolver.setSuffix(suffix);
 		viewResolver.setExposeContextBeansAsAttributes(Boolean.TRUE);
-
-		// ContentNegotiatingViewResolver
 
 		return viewResolver;
 	}
@@ -97,7 +93,8 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 	public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
 
 		Jackson2ObjectMapperBuilder builder = new Jackson2ObjectMapperBuilder();
-		builder.indentOutput(true).dateFormat(new SimpleDateFormat("yyyy-MM-dd"))
+		builder.indentOutput(true)//
+				.dateFormat(new SimpleDateFormat("yyyy-MM-dd"))//
 				.modulesToInstall(new ParameterNamesModule());
 		builder.serializationInclusion(JsonInclude.Include.NON_NULL);
 
@@ -105,30 +102,11 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter {
 		deserializers.put(BigDecimal.class, new BigDecimalDeserializer());
 		builder.deserializersByType(deserializers);
 
-		// Jackson2ObjectMapperBuilder builder = new
-		// Jackson2ObjectMapperBuilder()//
-		// .indentOutput(true)//
-		// .dateFormat(new SimpleDateFormat("yyyy-MM-dd"));
-		// converters.add(new
-		// MappingJackson2HttpMessageConverter(builder.build()));
-		// converters.add(new
-		// MappingJackson2XmlHttpMessageConverter(builder.xml().build()));
-
-		// SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-
-		// ObjectMapper mapper = new ObjectMapper();
-		// mapper.setDateFormat(dateFormat);
-		// mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-
 		MappingJackson2HttpMessageConverter jsonHmc = new MappingJackson2HttpMessageConverter();
 		jsonHmc.setSupportedMediaTypes(
 				Arrays.asList(MediaType.APPLICATION_JSON, MediaType.APPLICATION_JSON_UTF8, MediaType.TEXT_HTML));
 		jsonHmc.setObjectMapper(builder.build());
 		converters.add(jsonHmc);
-
-		// XmlMapper xmlMapper = new XmlMapper();
-		// xmlMapper.setDateFormat(dateFormat);
-		// xmlMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
 		MappingJackson2XmlHttpMessageConverter xmlHmc = new MappingJackson2XmlHttpMessageConverter();
 		xmlHmc.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_XML, MediaType.APPLICATION_ATOM_XML,

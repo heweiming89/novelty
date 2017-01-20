@@ -9,7 +9,7 @@ import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
 
 import cn.heweiming.novelty.shiro.service.SysSessionService;
 
-public class FreedomSessionDao extends EnterpriseCacheSessionDAO {
+public class NoveltySessionDao extends EnterpriseCacheSessionDAO {
 
 	@Resource
 	private SysSessionService sysSessionService;

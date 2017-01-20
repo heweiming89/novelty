@@ -259,7 +259,7 @@
                       <li class="divider"></li>
                       <li><a href="page_user_lock_1.html"> <i class="icon-lock"></i> Lock Screen
                       </a></li>
-                      <li><a href="page_user_login_1.html"> <i class="icon-key"></i> Log Out
+                      <li><a id="logout" href="javascript:;"> <i class="icon-key"></i> 注销
                       </a></li>
                     </ul></li>
                   <!-- END USER LOGIN DROPDOWN -->

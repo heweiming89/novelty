@@ -8,6 +8,9 @@ import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,7 +26,6 @@ public class ApplicationController {
 
 	@RequestMapping(value = "/admin/login", method = RequestMethod.GET)
 	public ModelAndView openLoginView() {
-		System.out.println("get admin login");
 		ModelAndView mav = new ModelAndView("/admin_login");
 		return mav;
 	}
@@ -37,13 +39,21 @@ public class ApplicationController {
 		currentUser.login(token);
 		return mav;
 	}
+	
+	@DeleteMapping(value = "/logout")
+//	@PostMapping(value = "/admin/logout")
+	public ModelAndView adminLogout(){
+		ModelAndView mav = new ModelAndView("redirect:/admin/login");
+		Subject currentUser = SecurityUtils.getSubject();
+		currentUser.logout();
+		return mav;
+	}
 
 	// @RequestMapping(value = "/admin/login", method = RequestMethod.DELETE)
 	// @ResponseBody
 	// public ModelAndView adminLogout() {
 	// ModelAndView mav = new ModelAndView();
 	// mav.setViewName("redirect:/index");
-	// System.out.println(3421);
 	// return mav;
 	// }
 
@@ -52,14 +62,16 @@ public class ApplicationController {
 		ModelAndView mav = new ModelAndView("/index");
 		List<SysMenuVo> menuVos = sysMenuService.findMenuByUser(null);
 		for (SysMenuVo sysMenuVo : menuVos) {
-			System.out.println(sysMenuVo);
-			System.out.println("###########################################");
 			List<SysMenuVo> subMenuList = sysMenuVo.getSubMenuList();
-			for (SysMenuVo subMenu : subMenuList) {
-				System.out.println(subMenu);
-			}
 		}
+		System.out.println(3421);
 		mav.addObject("menuList", menuVos);
+		return mav;
+	}
+
+	@GetMapping(value = "/unauthorized")
+	public ModelAndView unauthorized() {
+		ModelAndView mav = new ModelAndView("/error/unauthorized");
 		return mav;
 	}
 

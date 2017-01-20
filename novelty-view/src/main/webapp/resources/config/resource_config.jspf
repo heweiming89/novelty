@@ -18,12 +18,12 @@
 <!-- global图片根路径 -->
 <c:set var="global_img_root" value="${global_root }/img" scope="application"></c:set>
 <!-- 插件根路径 -->
-<c:set var="plugins_root" value="${global_root }/plug-ins" scope="application"></c:set>
+<c:set var="plugins_root" value="${global_root }/plug-ins" scope="application" />
 <!-- metronic根路径 -->
-<c:set var="metronic_root" value="${resources_root }/framework/metronic" scope="application"></c:set>
+<c:set var="metronic_root" value="${resources_root }/framework/metronic" scope="application" />
 
 <script>
-  context_root = "${context_root}";
+	context_root = "${context_root}";
 </script>
 
 <!-- 插件版本 -->

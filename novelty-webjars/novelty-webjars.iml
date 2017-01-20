@@ -15,15 +15,14 @@
     <orderEntry type="library" name="Maven: org.webjars:jquery:2.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:3.3.7-1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap-daterangepicker:2.1.24" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:momentjs:2.16.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:momentjs:2.17.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:Eonasdan-bootstrap-datetimepicker:4.17.43" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap-switch:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:countUp.js:1.7.0" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:datatables:1.10.13" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:jquery:2.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:excanvas:3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:font-awesome:4.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:fullcalendar:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:jquery:2.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:moment:2.17.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:html5-boilerplate:5.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:html5shiv:3.7.3" level="project" />
@@ -94,15 +93,11 @@
     <orderEntry type="library" name="Maven: org.webjars:pace:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:bootstrap-tabdrop:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jquery-blockui:2.65" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:datatables-buttons:1.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:datatables-fixedcolumns:3.0.4" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:datatables-responsive:2.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:sockjs-client:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:timeago:1.5.3" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:datatables-fixedheader:2.1.2-1" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:datatables:1.10.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:timeago.js:1.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars:datatables-plugins:1.10.12" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.npm:flatpickr:2.2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:slidebars:2.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:17.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.3" level="project" />

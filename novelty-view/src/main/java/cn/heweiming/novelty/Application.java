@@ -39,7 +39,6 @@ public class Application extends SpringBootServletInitializer {
 				HiddenHttpMethodFilter.class);
 		hiddenHttpMethodFilter.addMappingForUrlPatterns(null, false, "/*");
 
-		System.out.println("222222222222222222222");
 
 		ServletRegistration.Dynamic dispatcherServlet = servletContext.addServlet("dispatcherServlet",
 				new DispatcherServlet(webApplicationContext));

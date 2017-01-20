@@ -19,7 +19,7 @@ public class NoveltyDefaultServlet extends DefaultServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		System.out.println(43214321423L);
+//		System.out.println(request.getRequestURL().toString());
 		super.doGet(request, response);
 	}
 

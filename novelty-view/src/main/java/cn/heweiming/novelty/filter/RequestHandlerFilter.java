@@ -41,8 +41,6 @@ public class RequestHandlerFilter implements Filter {
 		// place your code here
 		HttpServletRequest req = (HttpServletRequest) request;
 		StringBuffer requestURL = req.getRequestURL();
-		System.out.println(requestURL);
-		System.out.println(req.getRequestURI());
 		HttpServletResponse resp = (HttpServletResponse) response;
 		String header = req.getHeader("X-Requested-With");
 		chain.doFilter(request, response);
@@ -50,11 +48,9 @@ public class RequestHandlerFilter implements Filter {
 		} else {
 //			resp.sendRedirect(req.getRequestURI() + "?version=1.5");
 		}
-		System.out.println(header);
 		// if(requestURL.indexOf("version=") != -1){
 		
 		// }else{
-		// System.out.println("重定向");
 		// resp.sendRedirect(req.getRequestURL().append("?version=1.5").toString());
 		// return;
 		// }
