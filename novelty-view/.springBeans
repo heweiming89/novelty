@@ -9,7 +9,6 @@
 	<configs>
 	</configs>
 	<autoconfigs>
-		<config>java:cn.heweiming.novelty.Application</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
