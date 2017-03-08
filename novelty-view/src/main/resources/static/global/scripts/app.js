@@ -1,5 +1,5 @@
 var App = function () {
-    var t, e = !1, o = !1, a = !1, i = !1, n = [], l = window.context_root + "/static/global/", s = "img/", r = "plugins/", c = "css/", d = {
+    var t, e = !1, o = !1, a = !1, i = !1, n = [], l = "static/global/", s = "img/", r = "plugins/", c = "css/", d = {
         blue: "#89C4F4",
         red: "#F3565D",
         green: "#1bbc9b",
