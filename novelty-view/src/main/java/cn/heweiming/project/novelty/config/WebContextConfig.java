@@ -45,6 +45,11 @@ import cn.heweiming.project.novelty.property.NoveltyProperties;
         @Filter(type = FilterType.ANNOTATION, value = ControllerAdvice.class) })
 public class WebContextConfig extends WebMvcConfigurerAdapter {
 
+    private static final String WEBJARS_PATTERN = "/webjars/**";
+    private static final String WEBJARS_LOCATIONS = "classpath:/META-INF/resources/webjars/";
+    private static final String STATIC_PATTERN = "/static/**";
+    private static final String STATIC_LOCATIONS = "classpath:/static/";
+
     @Bean /* 文件上传配置 */
     public MultipartResolver multipartResolver() {
         StandardServletMultipartResolver multipartResolver = new StandardServletMultipartResolver();
@@ -107,8 +112,11 @@ public class WebContextConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        if (!registry.hasMappingForPattern("/webjars/**")) {
-            registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+        if (!registry.hasMappingForPattern(WEBJARS_PATTERN)) {
+            registry.addResourceHandler(WEBJARS_PATTERN).addResourceLocations(WEBJARS_LOCATIONS);
+        }
+        if (!registry.hasMappingForPattern(STATIC_PATTERN)) {
+            registry.addResourceHandler(STATIC_PATTERN).addResourceLocations(STATIC_LOCATIONS);
         }
     }
 

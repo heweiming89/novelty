@@ -33,12 +33,12 @@ import cn.heweiming.project.novelty.property.NoveltyProperties;
 @Configuration
 // @EnableAutoConfiguration
 @PropertySource(value = { "classpath:db.properties" })
+@MapperScan(basePackages = { "cn.heweiming.project.novelty.mapper" })
 @ComponentScan(basePackages = { NoveltyProperties.BASE_PACKAGES }, excludeFilters = {
         @Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class),
         @Filter(type = FilterType.ANNOTATION, value = Controller.class),
         @Filter(type = FilterType.ANNOTATION, value = RestController.class),
         @Filter(type = FilterType.ANNOTATION, value = ControllerAdvice.class) })
-@MapperScan(basePackages = { "cn.heweiming.project.novelty.mapper" })
 @EnableTransactionManagement // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @EnableAspectJAutoProxy
 @EnableAsync

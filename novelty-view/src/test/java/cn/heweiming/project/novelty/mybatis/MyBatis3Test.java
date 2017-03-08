@@ -1,5 +1,6 @@
 package cn.heweiming.project.novelty.mybatis;
 
+import java.util.Date;
 import java.util.List;
 
 import org.apache.ibatis.session.RowBounds;
@@ -27,20 +28,23 @@ public class MyBatis3Test {
 
     @Test
     public void testUserMapper() {
-        //        for (int i = 0; i < 100; i++) {
-        //            SysUser user = new SysUser();
-        //            user.setMobile(i + "");
-        //            user.setRealName("realName" + i);
-        //            user.setUsername("username" + i);
-        //            user.setActivity(i % 2 == 0 ? true : false);
-        //            user.setCreateTime(new Date());
-        //            int insert = userMapper.insert(user);
-        //            System.out.println(user);
-        //
-        //        }
+//                for (int i = 100; i < 200; i++) {
+//                    SysUser user = new SysUser();
+//                    user.setMobile(i + "");
+//                    user.setRealName("realName" + i);
+//                    user.setUsername("username" + i);
+//                    user.setActivity(i % 2 == 0 ? true : false);
+//                    user.setCreateTime(new Date());
+//                    int insert = userMapper.insert(user);
+//                    System.out.println(user);
+//        
+//                }
+//        long l = userMapper.countByExample(new SysUserCriteria());
+//        System.out.println(l);
+        
 
         SysUserCriteria criteria = null;
-        RowBounds rowBounds = new RowBounds(1, 25);
+        RowBounds rowBounds = new RowBounds(0, 25);
         List<SysUser> users = userMapper.selectByExampleWithRowbounds(criteria, rowBounds);
         for (SysUser user : users) {
             System.out.println(user);
