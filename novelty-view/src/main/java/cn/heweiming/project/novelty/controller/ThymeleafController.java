@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ThymeleafController {
 
-    @RequestMapping("/demo01")
+    @RequestMapping("/demo")
     public ModelAndView view1() {
         String viewName = "demo01";
         return new ModelAndView(viewName);

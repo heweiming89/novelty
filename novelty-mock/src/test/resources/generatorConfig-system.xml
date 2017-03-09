@@ -4,79 +4,77 @@
 
     <properties resource="mbg-view.properties" />
 
-    <classPathEntry
-        location="D:/openSource/lib/JDBC/MySQL/mysql-connector-java-5.1.40.jar" />
+    <classPathEntry location="D:/openSource/lib/JDBC/MySQL/mysql-connector-java-5.1.40.jar" />
 
-    <context id="MyBatis3" targetRuntime="MyBatis3"
-        defaultModelType="flat">
+    <context id="MyBatis3" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 
         <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
             <property name="searchString" value="Example$" />
             <property name="replaceString" value="Criteria" />
         </plugin>
-        <plugin
-            type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin">
+
+        <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin">
 
         </plugin>
-        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin">
+        
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>
+        
+        <!-- <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"> -->
 
-        </plugin>
-        <plugin type="org.mybatis.generator.plugins.SerializablePlugin">
+        <!-- </plugin> -->
+        <!-- <plugin type="org.mybatis.generator.plugins.SerializablePlugin"> -->
 
-        </plugin>
-        <plugin type="org.mybatis.generator.plugins.ToStringPlugin">
+        <!-- </plugin> -->
+        <!-- <plugin type="org.mybatis.generator.plugins.ToStringPlugin"> -->
 
-        </plugin>
+        <!-- </plugin> -->
 
         <commentGenerator>
             <property name="suppressAllComments" value="true" />
             <property name="suppressDate" value="true" />
         </commentGenerator>
 
-        <jdbcConnection driverClass="${jdbc.driver}"
-            connectionURL="${jdbc.url}" userId="${jdbc.username}"
+        <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="${jdbc.username}"
             password="" />
 
-        <javaModelGenerator targetPackage="${modelPackage}"
-            targetProject="${projectName}" />
+        <javaModelGenerator targetPackage="${modelPackage}" targetProject="${projectName}" />
 
-        <sqlMapGenerator targetPackage="${mapperXmlPackage}"
-            targetProject="${projectName}" />
+        <sqlMapGenerator targetPackage="${mapperXmlPackage}" targetProject="${projectName}" />
 
-        <javaClientGenerator targetPackage="${mapperPackage}"
-            targetProject="${projectName}" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="${mapperPackage}" targetProject="${projectName}" type="XMLMAPPER">
 
         </javaClientGenerator>
 
         <!-- 开始 系统表 -->
 
         <table tableName="t_sys_user" domainObjectName="SysUser">
-            <generatedKey column="ID" sqlStatement="MySql"
-                identity="true" />
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" />
         </table>
 
-        <!-- <table tableName="t_sys_role" domainObjectName="SysRole"> <generatedKey 
-            column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_permissions" 
-            domainObjectName="SysPermissions"> <generatedKey column="ID" sqlStatement="MySql" 
-            identity="true" /> </table> <table tableName="t_sys_menu" domainObjectName="SysMenu"> 
-            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> 
-            <table tableName="t_sys_user_role" domainObjectName="SysUserRole"> <generatedKey 
-            column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_role_permissions" 
-            domainObjectName="SysRolePermissions"> <generatedKey column="ID" sqlStatement="MySql" 
-            identity="true" /> </table> <table tableName="t_sys_dictionary" domainObjectName="SysDictionary"> 
-            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> 
-            <table tableName="t_sys_login_log" domainObjectName="SysLoginLog"> <generatedKey 
-            column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_operation_log" 
-            domainObjectName="SysOperationLog"> <generatedKey column="ID" sqlStatement="MySql" 
-            identity="true" /> </table> <table tableName="t_sys_session" domainObjectName="SysSession"> 
+        <table tableName="t_sys_role" domainObjectName="SysRole">
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" />
+        </table>
+
+        <table tableName="t_sys_user_role" domainObjectName="SysUserRole">
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" />
+            <columnOverride column="user_id" property="user" javaType="cn.heweiming.project.novelty.model.SysUser" />
+            <columnOverride column="role_id" property="role" javaType="cn.heweiming.project.novelty.model.SysRole" />
+        </table>
+
+        <!-- <table tableName="t_sys_permissions" domainObjectName="SysPermissions"> <generatedKey column="ID" sqlStatement="MySql" 
+            identity="true" /> </table> <table tableName="t_sys_menu" domainObjectName="SysMenu"> <generatedKey column="ID" sqlStatement="MySql" 
+            identity="true" /> </table> <table tableName="t_sys_role_permissions" domainObjectName="SysRolePermissions"> <generatedKey 
+            column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_dictionary" domainObjectName="SysDictionary"> 
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_login_log" domainObjectName="SysLoginLog"> 
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_operation_log" domainObjectName="SysOperationLog"> 
+            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_sys_session" domainObjectName="SysSession"> 
             <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> -->
 
         <!-- 结束 系统表 -->
-        <!-- <table tableName="t_biz_staff" domainObjectName="Staff"> <generatedKey 
-            column="ID" sqlStatement="MySql" identity="true" /> </table> <table tableName="t_biz_customer" 
-            domainObjectName="Customer"> <generatedKey column="ID" sqlStatement="MySql" 
-            identity="true" /> </table> <table tableName="t_biz_call_log" domainObjectName="CallLog"> 
-            <generatedKey column="ID" sqlStatement="MySql" identity="true" /> </table> -->
+        <!-- <table tableName="t_biz_staff" domainObjectName="Staff"> <generatedKey column="ID" sqlStatement="MySql" identity="true" 
+            /> </table> <table tableName="t_biz_customer" domainObjectName="Customer"> <generatedKey column="ID" sqlStatement="MySql" 
+            identity="true" /> </table> <table tableName="t_biz_call_log" domainObjectName="CallLog"> <generatedKey column="ID" sqlStatement="MySql" 
+            identity="true" /> </table> -->
 
     </context>
 </generatorConfiguration>

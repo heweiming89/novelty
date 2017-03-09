@@ -6,12 +6,7 @@
 </head>
 <body>
 	<!--/*@thymesVar id="name" type="java.lang.String"*/-->
-	<p th:text="'Hello！, ' + ${name} + '!'">3333</p>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste natus cum blanditiis voluptatibus suscipit quod ex animi in sunt quos qui reiciendis quisquam fuga accusantium laudantium aperiam. Deleniti officia.
-	<div>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores accusamus hic unde nihil perspiciatis ad dolore reiciendis cupiditate laudantium odit voluptatum aliquid numquam ducimus iure repellendus pariatur harum quos iste.
-	
-	</div>
-
+	<div th:insert="~{fragment :: copy}">4321423</div>
+	<div th:replace="~{fragment :: copy}">432142</div>
 </body>
 </html>
