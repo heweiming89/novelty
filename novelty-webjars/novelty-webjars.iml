@@ -20,9 +20,8 @@
     <orderEntry type="library" name="Maven: org.webjars:font-awesome:4.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:select2:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:select2-bootstrap-theme:0.1.0-beta.9" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:bootstrap:4.0.0-alpha.6" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:jquery:3.0.0-rc1" level="project" />
-    <orderEntry type="library" name="Maven: org.webjars.bower:tether:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:bootstrap:3.3.7" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:jquery:2.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:select2:4.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap-switch:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:countUp.js:1.7.0" level="project" />
@@ -55,5 +54,7 @@
     <orderEntry type="library" name="Maven: org.webjars.bower:requirejs:2.1.22" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.bower:jquery-sparkline:2.1.3" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:jQuery-slimScroll:1.3.8" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:bootstrap-calendar:0.2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars.bower:underscore:1.8.3" level="project" />
   </component>
 </module>
