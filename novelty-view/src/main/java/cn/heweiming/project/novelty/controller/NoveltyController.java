@@ -22,4 +22,13 @@ public class NoveltyController {
         return mav;
     }
 
+    @GetMapping(value = "/admin/index")
+    public ModelAndView adminIndex() {
+        String viewName = "admin_index";
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName(viewName);
+        mav.addObject("username", "admin");
+        return mav;
+    }
+
 }
