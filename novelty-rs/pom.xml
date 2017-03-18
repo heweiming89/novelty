@@ -7,7 +7,7 @@
   <!-- <artifactId>novelty</artifactId> -->
   <!-- <version>0.0.1-SNAPSHOT</version> -->
   <!-- </parent> -->
-  <groupId>cn.heweiming.project</groupId>
+  <groupId>com.heweiming.project</groupId>
   <artifactId>novelty-rs</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>

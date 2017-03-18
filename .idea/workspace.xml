@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a30cb08c-6d7f-4f0e-a4fd-4d577f0fbe30" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/dashboard.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/novelty_view_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/novelty_view_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/novelty-view.iml" afterPath="$PROJECT_DIR$/novelty-view/novelty-view.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/quick-sidebar.min.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/quick-sidebar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/admin_index.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/admin_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-webjars/novelty-webjars.iml" afterPath="$PROJECT_DIR$/novelty-webjars/novelty-webjars.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/demo.min.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/admin/scripts/demo.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/admin/admin-script.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/admin/admin-script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/admin/admin-style.css" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/admin/admin-style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/admin/css/layout.min.css" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/admin/css/layout.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/admin/scripts/layout.min.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/admin/scripts/layout.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/user/user-script.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/user/user-script.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layout/user/user-style.css" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/user/user-style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/bak/index.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/bak/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/global/scripts.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/global/scripts.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/global/style.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/global/style.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/footer.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/fragments/footer.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/header.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/fragments/header.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/menu.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/fragments/menu.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/quick-sidebar.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/fragments/quick-sidebar.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/scripts.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/scripts.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/style.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/style.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/layout/admin/theme-panel.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/includes/layouts/admin/fragments/theme-panel.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/page/dashboard/index.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/pages/dashboard/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/page/page.html" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/templates/pages/page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/src/main/resources/system.pdb" afterPath="$PROJECT_DIR$/novelty-mock/src/main/resources/system.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-mock/src/main/resources/system.pdm" afterPath="$PROJECT_DIR$/novelty-mock/src/main/resources/system.pdm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/.springBeans" afterPath="$PROJECT_DIR$/novelty-view/.springBeans" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/user/scripts/demo.min.js" afterPath="$PROJECT_DIR$/novelty-view/src/main/resources/static/layouts/user/scripts/demo.min.js" />
     </list>
     <ignored path="novelty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +47,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-557">
-              <caret line="1413" column="22" selection-start-line="1413" selection-start-column="22" selection-end-line="1413" selection-end-column="22" />
+            <state relative-caret-position="25398">
+              <caret line="1411" column="22" selection-start-line="1411" selection-start-column="22" selection-end-line="1411" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -79,8 +57,8 @@
       <file leaf-file-name="quick-sidebar.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/quick-sidebar.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            <state relative-caret-position="341">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -89,7 +67,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/novelty-webjars/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4230">
+            <state relative-caret-position="4446">
               <caret line="247" column="10" selection-start-line="247" selection-start-column="10" selection-end-line="247" selection-end-column="10" />
               <folding />
             </state>
@@ -160,10 +138,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,223 +184,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="novelty-view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -936,16 +700,20 @@
       <workItem from="1488813504846" duration="2563000" />
       <workItem from="1488982182169" duration="2235000" />
       <workItem from="1489071257961" duration="1867000" />
-      <workItem from="1489148890650" duration="1625000" />
+      <workItem from="1489148890650" duration="2226000" />
+      <workItem from="1489415687657" duration="25000" />
+      <workItem from="1489502717642" duration="409000" />
+      <workItem from="1489735429310" duration="125000" />
+      <workItem from="1489737287921" duration="36000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35034000" />
+    <option name="totallyTimeSpent" value="36230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -954,13 +722,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2159265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1084,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelty-webjars/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4230">
-          <caret line="247" column="10" selection-start-line="247" selection-start-column="10" selection-end-line="247" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/webapp/t.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1100,37 +860,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/demo.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/demo.min.js" />
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/layout.min.js" />
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="1413" column="22" selection-start-line="1413" selection-start-column="22" selection-end-line="1413" selection-end-column="22" />
+        <state relative-caret-position="25398">
+          <caret line="1411" column="22" selection-start-line="1411" selection-start-column="22" selection-end-line="1411" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/dashboard.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="839" column="36" selection-start-line="839" selection-start-column="36" selection-end-line="839" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/dashboard.min.js" />
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/page/style.html" />
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/templates/fragment/page/scripts.html" />
     <entry file="file://$PROJECT_DIR$/novelty-view/src/main/resources/static/global/scripts/quick-sidebar.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        <state relative-caret-position="341">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/novelty-webjars/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4446">
+          <caret line="247" column="10" selection-start-line="247" selection-start-column="10" selection-end-line="247" selection-end-column="10" />
           <folding />
         </state>
       </provider>
