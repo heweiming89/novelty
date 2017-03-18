@@ -7,27 +7,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>novelty-view</artifactId>
-    <packaging>war</packaging>
-
-
-    <build>
-        <finalName>novelty</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
-    <properties>
-        <thymeleaf.version>3.0.3.RELEASE</thymeleaf.version>
-        <thymeleaf-layout-dialect.version>2.2.0</thymeleaf-layout-dialect.version>
-    </properties>
-
-    <dependencies>
-
-
-    </dependencies>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>novelty-view-console</module>
+        <module>novelty-view-webjars</module>
+        <module>novelty-view-login</module>
+    </modules>
 </project>

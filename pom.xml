@@ -7,15 +7,13 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>novelty-api</module>
-        <module>novelty-mock</module>
-        <module>novelty-rs</module>
-        <module>novelty-service</module>
-        <module>novelty-view</module>
-        <module>novelty-webjars</module>
-        <module>novelty-common</module>
-        <module>novelty-login</module>
-        <module>novelty-doc</module>
+
+    <module>novelty-biz</module>
+    <module>novelty-view</module>
+    <module>novelty-api</module>
+    <module>novelty-common</module>
+    <module>novelty-dao</module>
+    <module>novelty-mock</module>
     </modules>
 
     <properties>
