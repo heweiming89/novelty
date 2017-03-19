@@ -6,7 +6,6 @@ $.validator.setDefaults({
 
 $(document).ready(function() {
     $("#signupForm").validate({
-//        debug : true,
         rules : {
             firstname : "required",
             lastname : "required",
@@ -68,7 +67,6 @@ $(document).ready(function() {
     });
 
     $("#signupForm1").validate({
-//        debug : true,
         rules : {
             firstname1 : "required",
             lastname1 : "required",

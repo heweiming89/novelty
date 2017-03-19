@@ -14,6 +14,7 @@
     <module>novelty-common</module>
     <module>novelty-dao</module>
     <module>novelty-mock</module>
+    <module>novelty-doc</module>
     </modules>
 
     <properties>

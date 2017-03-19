@@ -10,5 +10,6 @@
   <modules>
       <module>novelty-biz-dao</module>
       <module>novelty-console-dao</module>
+      <module>novelty-dao-base</module>
   </modules>
 </project>

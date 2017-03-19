@@ -2,7 +2,8 @@
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org" th:fragment="index(links,page,scripts)">
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org" th:fragment="index(links,page,scripts)"
+    th:with="plugin_links=~{includes/plugin-links},plugin_scripts=~{includes/plugin-scripts}">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
 
@@ -16,14 +17,16 @@
 <link rel="shortcut icon" th:href="@{/favicon.ico}" />
 
 <!-- BEGIN GLOBAL MANDATORY STYLES -->
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+    type="text/css" />
 <link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css" />
 <link th:href="@{/static/plugins/simple-line-icons/2.4.1/css/simple-line-icons.css}" rel="stylesheet" type="text/css" />
 <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
-<link th:href="@{/webjars/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css}" rel="stylesheet" type="text/css" />
+<link th:href="@{/webjars/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css}" rel="stylesheet"
+    type="text/css" />
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<th:block th:replace="${links} ?: _" />
+<th:block th:replace="${plugin_links} ?: _" />
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN THEME GLOBAL STYLES -->
 <link th:href="@{/static/global/css/components-rounded.min.css}" rel="stylesheet" id="style_components" type="text/css" />
@@ -32,6 +35,8 @@
 <!-- BEGIN THEME LAYOUT STYLES -->
 <link th:href="@{/static/layout/css/layout.min.css}" rel="stylesheet" type="text/css" />
 <link th:href="@{/static/layout/css/themes/blue.min.css}" rel="stylesheet" type="text/css" id="style_color" />
+<link th:href="@{/static/layout/css/custom.css}" rel="stylesheet" type="text/css" />
+<th:block th:replace="${links} ?: _" />
 <!-- END THEME LAYOUT STYLES -->
 </head>
 <!-- END HEAD -->
@@ -65,12 +70,14 @@
                         </h1>
                         <div class="page-bar">
                             <ul class="page-breadcrumb">
-                                <li><i class="icon-home"></i> <a href="index.html">Home</a> <i class="fa fa-angle-right"></i></li>
+                                <li><i class="icon-home"></i> <a href="index.html">Home</a> <i
+                                    class="fa fa-angle-right"></i></li>
                                 <li><span>Dashboard</span></li>
                             </ul>
                             <div class="page-toolbar">
                                 <div class="btn-group pull-right">
-                                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000"
+                                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle"
+                                        data-toggle="dropdown" data-hover="dropdown" data-delay="1000"
                                         data-close-others="true">
                                         Actions <i class="fa fa-angle-down"></i>
                                     </button>
@@ -105,13 +112,13 @@
         <!-- END FOOTER -->
     </div>
     <!--[if lt IE 9]>
-    <script src="../assets/global/plugins/respond.min.js"></script>
-    <script src="../assets/global/plugins/excanvas.min.js"></script> 
-    <script src="../assets/global/plugins/ie8.fix.min.js"></script> 
-    <![endif]-->
+        <script src="../assets/global/plugins/respond.min.js"></script>
+        <script src="../assets/global/plugins/excanvas.min.js"></script> 
+        <script src="../assets/global/plugins/ie8.fix.min.js"></script> 
+        <![endif]-->
     <script th:inline="javascript" type="text/javascript">
-        window.contextPath = [[${#servletContext.contextPath}]];
-    </script>
+            window.contextPath = [[${#servletContext.contextPath}]];
+        </script>
     <!-- BEGIN CORE PLUGINS -->
     <script th:src="@{/webjars/jquery/2.2.4/jquery.min.js}" type="text/javascript"></script>
     <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}" type="text/javascript"></script>
@@ -121,6 +128,7 @@
     <script th:src="@{/webjars/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js}" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <th:block th:replace="${plugin_scripts} ?: _" />
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
     <script th:src="@{/static/global/scripts/app.js}" type="text/javascript"></script>
